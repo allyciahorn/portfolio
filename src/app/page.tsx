@@ -11,10 +11,15 @@ const projects = [
 ];
 
 const vibes = [
-  "civic technology",
-  "human-centered design",
-  "equitable access",
-  "public good",
+  "Civic Tech",
+  "Data for Good",
+  "Ethical AI",
+  "Public Interest Technology",
+  "Accessibility",
+  "Open Systems",
+  "Transparency",
+  "Human-Centered Design",
+  "Social Impact",
 ];
 
 export default function HomePage() {
@@ -37,18 +42,6 @@ export default function HomePage() {
 
         {/* Header */}
         <header className="text-center space-y-4">
-          {/* Badges */}
-          <div className="flex flex-wrap justify-center gap-2">
-            {vibes.map((v) => (
-              <span
-                key={v}
-                className="rounded-full border border-border bg-card px-3 py-1 text-xs text-foreground/70"
-              >
-                {v}
-              </span>
-            ))}
-          </div>
-
           <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight text-foreground">
             Allycia Horn{" "}
             <span className="text-foreground/60">— Software Engineer</span>
@@ -282,10 +275,18 @@ export default function HomePage() {
             <div className="h-px flex-1 bg-border" />
           </div>
 
-          <div className="rounded-2xl border border-border bg-background p-5">
-            <p className="font-medium text-foreground">John Carroll University</p>
+          <div className="rounded-2xl border border-border bg-background p-5 space-y-1">
+            <div className="flex justify-between flex-wrap gap-2">
+              <p className="font-medium text-foreground">
+                John Carroll University
+              </p>
+              <p className="text-sm text-foreground/60">
+                2025
+              </p>
+            </div>
+
             <p className="text-foreground/70">
-              B.S. Computer Science — <span className="italic">cum laude</span>
+              Bachelor of Science in Computer Science, <span className="italic">cum laude</span>
             </p>
           </div>
         </section>
@@ -297,12 +298,26 @@ export default function HomePage() {
             <div className="h-px flex-1 bg-border" />
           </div>
 
-          <p className="text-foreground/80 leading-relaxed italic">
-            I’m interested in technology that expands access to essential
-            systems, strengthens public understanding, supports ethical data use,
-            and promotes inclusivity in decision-making tools.
-          </p>
+          <div className="space-y-4">
+            <p className="border-l-2 border-emerald-500/30 pl-4 text-foreground/80 leading-relaxed italic">
+              I’m interested in building technology that expands access to essential
+              systems, demystifies complex processes, and supports ethical, inclusive
+              decision making—especially in civic, legal, and data-driven contexts.
+            </p>
+
+            <div className="flex flex-wrap justify-left gap-2">
+              {vibes.map((v) => (
+                <span
+                  key={v}
+                  className="rounded-full border border-emerald-500/30 px-4 py-2 text-sm"
+                >
+                  {v}
+                </span>
+              ))}
+            </div>
+          </div>
         </section>
+
 
         {/* Footer */}
         <footer className="pt-2 text-sm text-foreground/70 text-center italic">
