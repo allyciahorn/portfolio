@@ -2,9 +2,9 @@ import Link from "next/link";
 
 const projects = [
   {
-    title: "Court Companion",
+    title: "Court Companion — Full-stack web application",
     tagline:
-      "A community-centered web tool that empowers individuals to understand civil court paperwork and navigate legal processes with clarity and confidence.",
+      "Built with React, Next.js, FastAPI, Python, PostgreSQL and REST APIs.",
     demoUrl: "https://www.youtube.com/watch?v=qeKf1ykQ3Kk",
     githubUrl: "https://github.com/allyciahorn/court-companion",
   },
@@ -30,7 +30,7 @@ export default function HomePage() {
             <img
               src="/Allycia.png"
               alt="Allycia Horn"
-              className="h-36 w-36 sm:h-44 sm:w-44 rounded-full object-cover bg-card shadow-[0_6px_26px_rgba(0,0,0,0.10)]"
+              className="h-50 w-50 sm:h-58 sm:w-58 rounded-full object-cover bg-card shadow-[0_6px_26px_rgba(0,0,0,0.10)]"
             />
           </div>
         </div>
@@ -108,37 +108,69 @@ export default function HomePage() {
           </div>
 
           {projects.map((p) => (
-            <article
-              key={p.title}
-              className="rounded-2xl border border-border bg-card p-5 space-y-3"
-            >
-              <div className="space-y-1">
-                <h3 className="text-lg font-semibold text-foreground">
-                  {p.title}
-                </h3>
-                <p className="text-foreground/70">{p.tagline}</p>
-              </div>
+          <article
+            key={p.title}
+            className="rounded-2xl border border-border bg-card p-5 space-y-4"
+          >
+            {/* What it is */}
+            <div className="space-y-1">
+              <h3 className="text-lg font-semibold text-foreground">
+                {p.title}
+              </h3>
+              <p className="text-foreground/70">
+                {p.tagline}
+              </p>
+            </div>
 
-              <div className="flex flex-wrap gap-3">
-                <a
-                  href={p.demoUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="rounded-full border border-border bg-background px-4 py-2 text-sm font-medium text-foreground/80 hover:bg-muted transition"
-                >
-                  ▶ Demo
-                </a>
-                <a
-                  href={p.githubUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="rounded-full border border-border bg-background px-4 py-2 text-sm font-medium text-foreground/80 hover:bg-muted transition"
-                >
-                  Code
-                </a>
-              </div>
-            </article>
-          ))}
+            {/* Why it exists / what it does */}
+            <div className="space-y-2 text-foreground/60">
+              <p>
+                A web application that helps people navigate civil court documents 
+                without legal representation. Court Companion clarifies what a document means, 
+                surfaces important deadlines, and helps users draft appropriate responses.
+              </p>
+
+              <p>
+                The tool is intentionally simple and privacy-first, with no accounts and no 
+                long-term data storage.
+              </p>
+            </div>
+
+            {/* Features) */}
+            <div className="space-y-2">
+              <p className="text-foreground/70">
+                Key features
+              </p>
+              <ul className="list-disc pl-5 text-sm text-foreground/70 space-y-1">
+                <li>Document intake and parsing</li>
+                <li>Deadline and task identification</li>
+                <li>Guided document drafting</li>
+                <li>Case organization checklists</li>
+              </ul>
+            </div>
+
+            {/* Actions */}
+            <div className="flex flex-wrap gap-3 pt-1">
+              <a
+                href={p.demoUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="rounded-full border border-border bg-background px-4 py-2 text-sm font-medium text-foreground/80 hover:bg-muted transition"
+              >
+                ▶ Demo
+              </a>
+              <a
+                href={p.githubUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="rounded-full border border-border bg-background px-4 py-2 text-sm font-medium text-foreground/80 hover:bg-muted transition"
+              >
+                Code
+              </a>
+            </div>
+          </article>
+        ))}
+
         </section>
 
         {/* Experience */}
