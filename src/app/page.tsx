@@ -4,13 +4,13 @@ const projects = [
   {
     title: "Court Companion",
     tagline:
-      "A self-help tool designed to help people understand and stay on track with civil court documents.",
+      "A community-centered web tool that empowers individuals to understand civil court paperwork and navigate legal processes with clarity and confidence.",
     demoUrl: "https://www.youtube.com/watch?v=qeKf1ykQ3Kk",
     githubUrl: "https://github.com/allyciahorn/court-companion",
   },
 ];
 
-const vibes = ["civic tech", "access to justice", "calm software", "data systems"];
+const vibes = ["civic technology", "human-centered design", "equitable access", "public good"];
 
 export default function HomePage() {
   return (
@@ -47,19 +47,19 @@ export default function HomePage() {
           </h1>
 
           <p className="text-base sm:text-lg text-stone-700 mx-auto max-w-2xl leading-relaxed">
-            I use technology to{" "}
+            I build technology that helps people{" "}
             <span className="underline decoration-emerald-300 underline-offset-4">
-              reduce harm
+              understand and engage
             </span>
-            ,{" "}
+             {" "}with complex systems. My work focuses on {" "}
             <span className="underline decoration-rose-300 underline-offset-4">
-              increase transparency
+              transparency
             </span>
-            , and make{" "}
+             ,{" "}
             <span className="underline decoration-sky-300 underline-offset-4">
-              complex systems
-            </span>{" "}
-            easier for everyday people to navigate.
+              equity
+            </span>,{" "}
+            and creating tools that strengthen public participation in civic processes.
           </p>
 
           {/* Links */}
@@ -227,9 +227,9 @@ export default function HomePage() {
           </div>
 
           <p className="text-stone-700 leading-relaxed italic">
-            Civic technology, access to justice, transparency and accountability, 
-            community-built tools, and designing calm, 
-            accessible software.
+            I’m interested in technology that expands access to essential systems, 
+            strengthens public understanding, supports ethical data use, 
+            and promotes inclusivity in decision-making tools.
           </p>
         </section>
 
