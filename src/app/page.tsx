@@ -4,22 +4,17 @@ const projects = [
   {
     title: "Court Companion — Full-stack web application",
     tagline:
-      "Built with React, Next.js, FastAPI, Python, PostgreSQL and REST APIs.",
+      "Built with React, Next.js, FastAPI, and Python.",
     demoUrl: "https://www.youtube.com/watch?v=qeKf1ykQ3Kk",
     githubUrl: "https://github.com/allyciahorn/court-companion",
   },
 ];
 
 const vibes = [
-  "Civic Tech",
-  "Data for Good",
-  "Ethical AI",
   "Public Interest Technology",
-  "Accessibility",
-  "Open Systems",
-  "Transparency",
-  "Human-Centered Design",
-  "Social Impact",
+  "Civic Tech",
+  "Digital Access",
+  "Data for Good",
 ];
 
 export default function HomePage() {
@@ -46,23 +41,6 @@ export default function HomePage() {
             Allycia Horn{" "}
             <span className="text-foreground/60">— Software Engineer</span>
           </h1>
-
-          <p className="text-base sm:text-lg text-foreground/80 mx-auto max-w-2xl leading-relaxed">
-            I build technology that helps people{" "}
-            <span className="underline decoration-emerald-300 underline-offset-4">
-              understand and engage
-            </span>{" "}
-            with complex systems. My work focuses on{" "}
-            <span className="underline decoration-rose-300 underline-offset-4">
-              transparency
-            </span>
-            ,{" "}
-            <span className="underline decoration-sky-300 underline-offset-4">
-              equity
-            </span>
-            , and creating tools that strengthen public participation in civic
-            processes.
-          </p>
 
           {/* Links */}
           <div className="flex flex-wrap justify-center gap-3 text-sm">
@@ -124,8 +102,8 @@ export default function HomePage() {
               </p>
 
               <p>
-                The tool is intentionally simple and privacy-first, with no accounts and no 
-                long-term data storage.
+                The tool is intentionally simple and privacy first, with no accounts and no 
+                long term data storage.
               </p>
             </div>
 
@@ -187,23 +165,19 @@ export default function HomePage() {
               </div>
               <ul className="list-disc pl-5 space-y-1 text-foreground/70">
                 <li>
-                  Designed consumer insights frameworks to prioritize product
-                  features, clarifying roadmaps and guiding investment decisions
-                  with measurable outcomes.
+                  Prepared and analyzed financial reports to evaluate performance, 
+                  identify trends, and inform strategic decisions for consumer banking products.
                 </li>
                 <li>
-                  Conducted segmentation analyses to reveal customer behavior
-                  patterns, improving targeted outreach and increasing campaign
-                  relevance with measurable results.
+                  Analyzed monthly P&L, balance sheet, and cash flow statements to identify performance
+                  drivers, variances to forecasts, and emerging risks. 
                 </li>
                 <li>
-                  Facilitated weekly stakeholder workshops to align data needs,
-                  reduce rework, and accelerate delivery of actionable reports.
+                  Conducted industry and competitor analysis, including market sizing, benchmarking,
+                  and pricing comparisons to support strategic planning.
                 </li>
                 <li>
-                  Standardized data validation checks across pipelines to detect
-                  anomalies early and strengthen confidence in consumer metrics
-                  for decision-making.
+                  Created executive level presentations that summarized key financial insights, risks and reccommendations.
                 </li>
               </ul>
             </div>
@@ -219,20 +193,16 @@ export default function HomePage() {
               </div>
               <ul className="list-disc pl-5 space-y-1 text-foreground/70">
                 <li>
-                  Designed sampling strategies to expand respondent diversity,
-                  improving representativeness and study validity.
+                  Collaborated with team members to develop and refine survey questionnaires.
                 </li>
                 <li>
-                  Built reproducible data pipelines to convert raw survey exports
-                  into analysis-ready tables for faster reporting.
+                  Programmed, tested, and monitored surveys to ensure accuracy and smooth deployment. 
                 </li>
                 <li>
-                  Collaborated with researchers and project managers to align
-                  questionnaires with study goals and ensure actionable metrics.
+                  Produced key deliverables, including crosstabs and topline summaries for client review.
                 </li>
                 <li>
-                  Condensed complex results into concise executive briefs that
-                  translated findings into clear client recommendations.
+                  Analyzed survey data and helped prepare presentations and written reports outlining findings.
                 </li>
               </ul>
             </div>
@@ -249,20 +219,16 @@ export default function HomePage() {
           <div className="rounded-2xl border border-border bg-background p-5">
             <div className="grid gap-2 sm:grid-cols-1 text-foreground/80">
               <p>
-                <span className="font-medium text-foreground">Build</span> —
-                React, Node.js, Next.js, FastAPI
+                <span className="font-medium text-foreground">Languages & Frameworks:</span> |
+                React, Node.js, Next.js, FastAPI, Python, Java, JavaScript, SQL, HTML/CSS
               </p>
               <p>
-                <span className="font-medium text-foreground">Languages</span> —
-                Python, Java, JavaScript, SQL, HTML/CSS
+                <span className="font-medium text-foreground">Databases & Tools:</span> |
+                BigQuery, Tableau, PostgreSQL, MySQL, VS Code
               </p>
               <p>
-                <span className="font-medium text-foreground">Data</span> —
-                BigQuery, Tableau, PostgreSQL, MySQL
-              </p>
-              <p>
-                <span className="font-medium text-foreground">Workflow</span> —
-                Git, testing, debugging, documentation
+                <span className="font-medium text-foreground">Development:</span> |
+                RESTful APIs, responsive design, unit testing, Agile/Scrum debugging, documentation
               </p>
             </div>
           </div>
@@ -281,7 +247,7 @@ export default function HomePage() {
                 John Carroll University
               </p>
               <p className="text-sm text-foreground/60">
-                2025
+                December 2025
               </p>
             </div>
 
@@ -300,9 +266,8 @@ export default function HomePage() {
 
           <div className="space-y-4">
             <p className="border-l-2 border-emerald-500/30 pl-4 text-foreground/80 leading-relaxed italic">
-              I’m interested in building technology that expands access to essential
-              systems, demystifies complex processes, and supports ethical, inclusive
-              decision making—especially in civic, legal, and data-driven contexts.
+              I’m interested in building web apps that simplify complex processes and expand access to essential
+              systems. I am especially interested in civic and data-driven projects.
             </p>
 
             <div className="flex flex-wrap justify-left gap-2">
@@ -321,7 +286,6 @@ export default function HomePage() {
 
         {/* Footer */}
         <footer className="pt-2 text-sm text-foreground/70 text-center italic">
-          Interested in using tech to make the world a little kinder?{" "}
           <a
             href="https://www.linkedin.com/in/allycia-horn"
             className="underline underline-offset-4"
